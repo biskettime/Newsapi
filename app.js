@@ -1,7 +1,9 @@
 // app.js
 
+import {API_KEY} from "./config.js";
+
 const newsList = document.getElementById("news-list");
-const API_KEY = "0bbbb86ca3714a9493b4dd085261351e"; // NewsAPI에서 발급받은 API 키
+
 const ENDPOINT = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
 
 // 뉴스 데이터 가져오기
